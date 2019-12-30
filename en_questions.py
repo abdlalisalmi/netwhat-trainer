@@ -1,10 +1,12 @@
 import time
 import random
 
+num_correct = 0
+
 class EnQuestions():
 
 	def __init__(self = 0):
-		num_correct = 0
+		
 		def correct():
 			global num_correct
 			num_correct += 1
