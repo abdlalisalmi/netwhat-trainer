@@ -538,6 +538,7 @@ class EnQuestions():
 		numlst = list(range(1,6))
 		random.shuffle(numlst)
 		i = 0
+		start_time = time.time()
 		while i < len(numlst):
 			if (numlst[i] == 1):
 				qw1_5()
@@ -550,8 +551,12 @@ class EnQuestions():
 			elif (numlst[i] == 5):
 				qw21_25()
 			i += 1
+		end_time = time.time()
 
 		global num_correct
-		print("")
+		print("\n------------------------------------------------")
 		print("You Have \033[1;32;40m"+str(num_correct)+"/33\033[0;37;40m Correct Answers")
-		print("")
+		print("------------------------------------------------")
+		total_time = (end_time - start_time)/60
+		print("You Took \033[1;32;40m{}\033[0;37;40m Minutes To Complete The Training".format(round(total_time, 2)))
+		print("------------------------------------------------")

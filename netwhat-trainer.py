@@ -32,13 +32,13 @@ def  language():
 \033[1;32;40m[1]\033[0;37;40m : English
 \033[1;32;40m[2]\033[0;37;40m : Français (Not available yet)
         """)
-    language = 0
-    while (language != 1 ):#or language != 2):
-        language = int(input("Choose your language: "))
-        if language == 1:
+    language = '0'
+    while (language != '1' ):#or language != 2):
+        language = input("Choose your language: ")
+        if language == '1':
             print("[√] : English")
             return language
-        elif language == 2:
+        elif language == '2':
             print("Sorry French Not Available Yet")
             #return language
         else:
@@ -51,7 +51,7 @@ def main():
     logo()
     sprint(("Welcome to NetWhat Trainer, show us what you've learned :)").upper())
     lang = language()
-    sprint("The training will start now...", 5)
+    sprint("The training will start now...", 3)
     time.sleep(3)
     os.system("clear")
     logo()
@@ -60,9 +60,12 @@ def main():
 \033[0;37;41m[X]\033[0;37;40m ==> Wrong Answer :(
 """)
 
-    if lang == 1:
+    if lang == '1':
       EnQuestions()
-
+    
+    repeat = input("Do You Want to Repeat Training ? y/n : ").upper()
+    if (repeat == 'Y'):
+        main()
 
 
 if __name__ == '__main__':
