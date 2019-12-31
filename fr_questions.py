@@ -3,7 +3,7 @@ import random
 
 num_correct = 0
 
-class EnQuestions():
+class FrQuestions():
 
 	def __init__(self = 0):
 		
@@ -22,19 +22,19 @@ class EnQuestions():
 			print("\033[1;36;40m"+ch+"\033[0;37;40m")
 
 		def qw1_5():
-			qprint("\nWhich of the following proposals is the valid host range for the subnet on which the IP address 158.167.18.156/15 resides?")
+			qprint("\nParmi les propositions suivantes, laquelle est la plage d'hotes valide pour le sous-reseau sur lequel l'adresse IP 158.167.18.156/15 reside ?")
 			cprint("""
 \t1 - 158.166.0.1 - 158.167.255.253
 \t2 - 158.165.255.253 - 158.167.255.254
 \t3 - 158.166.0.1 - 158.167.255.254
 \t4 - 158.166.0.2 - 158.168.0.2""")
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '3':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nIf the IP address 123.48.189.194/21 is assigned to an Ethernet port of a router, what host address could communicate with it?")
+			qprint("\nSi l'adresse IP 123.48.189.194/21 est attribuee a un port Ethernet d'un routeur, quelle adresse d'hote pourrait communiquer avec lui?")
 			cprint("""
 \t1 - 101.219.223.235
 \t2 - 75.153.38.143
@@ -44,13 +44,13 @@ class EnQuestions():
 \t6 - 43.241.96.42
 \t7 - 123.48.189.109
 \t8 - 253.99.227.186""")
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '7':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nWhich of the following proposals is a private IP address?")
+			qprint("\nLaquelle des propositions suivantes est une adresse IP privee?")
 			cprint("""
 \t1 - 57.195.242.245
 \t2 - 172.27.217.52
@@ -60,13 +60,13 @@ class EnQuestions():
 \t6 - 176.37.230.43
 \t7 - 218.106.207.158
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '2':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nWhat is the network address of a host with an IP address of 182.161.121.118/24?")
+			qprint("\nQuelle est l'adresse reseau d'un hote avec une adresse IP de 182.161.121.118/24?")
 			cprint("""
 \t1 - 180.0.0.0
 \t2 - 182.161.121.64
@@ -78,13 +78,13 @@ class EnQuestions():
 \t8 - 182.161.121.0
 
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '8':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nWhat is the maximum number of IP addresses that can be assigned to hosts on a local subnet using the 255.255.128.0 subnet mask?")
+			qprint("\nQuel est le nombre maximal d'adresses IP pouvant etre attribuees aux hotes d'un sous-reseau local utilisant le masque de sous-reseau 255.255.128.0 ?")
 			cprint("""
 \t1 - 65536
 \t2 - 65532
@@ -98,7 +98,7 @@ class EnQuestions():
 
 
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '7':
 				correct()
 			else:
@@ -109,20 +109,20 @@ class EnQuestions():
 #**************************************************************************
 
 		def qw6_10():
-			qprint("\nYou want to implement a mechanism that automates IP configuration, including IP address, subnet mask, default gateway and DNS information. What protocol will you use to achieve this?")
+			qprint("\nVous souhaitez implementer un mecanisme qui automatise la configuration IP, y compris l'adresse IP, le masque de sous-reseau, la passerelle par defaut et les informations DNS. Quel protocole utiliserez-vous pour y parvenir?")
 			cprint("""
 \t1 - SNMP
 \t2 - DHCP
 \t3 - SMTP
 \t4 - ARP
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '2':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nYou have an interface on a router with the IP address of 124.144.156.248/21. Including the router interface, how many hosts can have IP addresses on the local network connected to the router interface?")
+			qprint("\nVous avez une interface sur un routeur avec l'adresse IP de 124.144.156.248/21. L'interface du routeur comprise, combien d'hotes peuvent avoir des adresses IP sur le reseau local connectees a l'interface du routeur?")
 			cprint("""
 \t1 - 1020
 \t2 - 2050
@@ -134,13 +134,13 @@ class EnQuestions():
 \t8 - 2042
 \t9 - 4094
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '5':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nWhich of the following proposals is the valid host range for the subnet on which the IP address 1.93.149.6/17 resides?")
+			qprint("\nParmi les propositions suivantes, laquelle est la plage d'hote valide pour le sous-reseau sur lequel l'adresse IP 1.93.149.6/17 reside?")
 			cprint("""
 \t1 - 1.93.127.255- 1.93.255.250
 \t2 - 1.93.128.1- 1.94.0.1
@@ -148,13 +148,13 @@ class EnQuestions():
 \t4 - 1.93.128.1- 1.93.255.254
 \t5 - 1.93.128.1- 1.94.0.3
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '4':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nWhat is the network address of a host with an IP address of 107.212.146.212.212/25?")
+			qprint("\nQuelle est l'adresse reseau d'un hote avec une adresse IP de 107.212.146.212/25?")
 			cprint("""
 \t1 - 107.212.146.208
 \t2 - 107.128.0.0
@@ -167,13 +167,13 @@ class EnQuestions():
 \t9 - 107.212.146.192
 
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '6':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nWhich of the following proposals is the valid host range for the subnet on which the IP address 233.249.146.36/21 resides?")
+			qprint("\nParmi les propositions suivantes, laquelle est la plage d'hotes valide pour le sous-reseau sur lequel l'adresse IP 233.249.146.36/21 reside?")
 			cprint("""
 \t1 - 233.249.143.255-233.249.151.250
 \t2 - 233.249.144.4-233.249.152.0
@@ -182,7 +182,7 @@ class EnQuestions():
 \t5 - 233.249.144.0-233.249.151.249
 
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '3':
 				correct()
 			else:
@@ -193,22 +193,22 @@ class EnQuestions():
 #**************************************************************************
 
 		def qw11_15():
-			qprint("\nWhich of the following propositions is not true?")
+			qprint("\nLaquelle des propositions suivantes n'est pas vraie ?")
 			cprint("""
-\t1 - TCP is a datagram oriented protocol
-\t2 - TCP does not support broadcasting
-\t3 - TCP provides extended error checking mechanisms. This is because it provides flow control and data acknowledgement
-\t4 - Data sequencing is a TCP feature (this means that packets arrive in order in the recipient)
-\t5 - TCP is reliable because it guarantees the delivery of data to the router of the destination
-\t6 - TCP is comparatively slower than UDP
+\t1 - TCP est un protocole oriente datagramme
+\t2 - TCP ne prend pas en charge la diffusion
+\t3 - TCP fournit des mecanismes de verification d'erreur etendus. C'est parce qu'il fournit le controle de flux et l'acquittement des donnees
+\t4 - Le sequencage des donnees est une caracteristique de TCP (cela signifie que les paquets arrivent dans l'ordre dans le destinataire)
+\t5 - TCP est fiable car il garantit la livraison des donnees au routeur de la destination
+\t6 - TCp est comparativement plus lent que UDP
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '1':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nWhat is the network address of a host with an IP address of 166.175.144.121/23?")
+			qprint("\nQuelle est l'adresse reseaux d'un hote avec une adresse IP de 166.175.144.121/23?")
 			cprint("""
 \t1 - 166.128.0.0
 \t2 - 166.175.144.0
@@ -219,13 +219,13 @@ class EnQuestions():
 \t7 - 166.0.0.0
 \t8 - 166.175.144.120
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '2':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nWhat is the maximum number of IP addresses that can be assigned to hosts on a local subnet using the 255.255.255.255.128 subnet mask?")
+			qprint("\nQuel est le nombre maximal d'adresses IP pouvant etre attribuees aux hotes d'un sous-reseau local utilisant le masque de sous-reseau 255.255.255.128 ?")
 			cprint("""
 \t1 - 128
 \t2 - 60
@@ -237,13 +237,13 @@ class EnQuestions():
 \t8 - 58
 \t9 - 64
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '3':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nWhat is the maximum number of IP addresses that can be assigned to hosts on a local subnet using the 255.224.0.0 subnet mask?")
+			qprint("\nQuel est le nombre maximal d'adresses IP pouvant etre attribuees aux hotes d'un sous-reseau local utilisant le masque de sous-reseau 255.224.0.0 ?")
 			cprint("""
 \t1 - 4194306
 \t2 - 4194302
@@ -255,20 +255,20 @@ class EnQuestions():
 \t8 - 2097150
 \t9 - 1048576
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '8':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nWhich of the following proposals is a private IP address?")
+			qprint("\nLaquelle des propositions suivantes est une adresse IP privee ?")
 			cprint("""
 \t1 - 10.182.204.132
 \t2 - 116.124.85.24
 \t3 - 52.178.248.246
 \t4 - 186.183.40.79
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '1':
 				correct()
 			else:
@@ -279,20 +279,20 @@ class EnQuestions():
 #**************************************************************************
 
 		def qw16_20():
-			qprint("\nWhat DHCP protocol does it use at the transport layer level?")
+			qprint("\nQuel protocole DHCP utilise-t-il au niveau de la couche transport ?")
 			cprint("""
 \t1 - ICMP
 \t2 - TCP
 \t3 - FTP
 \t4 - UDP
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '4':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nYou have an interface on a router with the IP address of 240.19.3.205/12. Including the router interface, how many hosts can have IP addresses on the local network connected to the router interface?")
+			qprint("\nVous avez une interface sur un routeur avec l'adresse IP  de 240.19.3.205/12. L'interface du routeur comprise, combien d'hotes peuvent avoir des adresses IP sur le reseau local conectees a l'interface du routeur ?")
 			cprint("""
 \t1 - 1048576
 \t2 - 2097154
@@ -302,46 +302,46 @@ class EnQuestions():
 \t6 - 2097148
 \t7 - 1048572
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '3':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nWhat is the broadcast address of a host with an IP address of 51,254,122,100/24?")
+			qprint("\nQuelle est l'adresse broadcast d'un hote avec une adresse IP de 51.254.122.100/24 ?")
 			cprint("""
 \t1 - 51.254.122.0
 \t2 - 51.254.122.1
 \t3 - 51.254.122.254
 \t4 - 51.254.122.255
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '4':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nWhat is the CIDR notation of the 255.255.128.0 subnet mask?")
+			qprint("\nQuelle est la notation CIDR du masque de sous reseau 255.255.128.0 ?")
 			cprint("""
 \t1 - /8
 \t2 - /16
 \t3 - /9
 \t4 - /17
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '4':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nWhat is the CIDR notation of the 255.255.192.0 subnet mask?")
+			qprint("\nQuelle est la notation CIDR du masque de sous reseau 255.255.192.0 ?")
 			cprint("""
 \t1 - /5
 \t2 - /31
 \t3 - /18
 \t4 - /14
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '3':
 				correct()
 			else:
@@ -352,59 +352,59 @@ class EnQuestions():
 #**************************************************************************
 
 		def qw21_25():
-			qprint("\nWhat are the different layers of the OSI model?")
+			qprint("\nQuelles sont les differentes couches du model OSI ?")
 			cprint("""
-\t1 - Application -> Presentation -> Session -> Transport -> Network -> Data Link -> Physical
-\t2 - Application -> Mediation -> Session -> Transport -> Network -> Data Link -> Physical
-\t3 - Presentation -> Session -> Transport -> Network -> Data Link -> Application -> Real
-\t4 - Relation -> Transport -> Session -> Data Link -> Mediation -> Presentation -> Application
+\t1 - Application -> Presentation -> Session -> Transport -> Reseau -> Liaison -> Physique
+\t2 - Application -> Mediation -> Session -> Transport -> Reseau -> Liaison -> Physique
+\t3 - Presentation -> Session -> Transport -> Reseau -> Liaison -> Application -> Reel
+\t4 - Relation -> Transport -> Session -> Liaison -> Mediation -> Presentation ->Application
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '1':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nWhat is the network address of a host with an IP address of 116.45.224.50/8?")
+			qprint("\nQuelle est l'adresse reseau d'un hote avec une adresse ip de 116.45.224.50/8 ?")
 			cprint("""
 \t1 - 116.0.1.0
 \t2 - 116.0.0.0
 \t3 - 116.255.255.0
 \t4 - 116.255.255.255
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '2':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nWhat is the network address of a host with an IP address of 45.195.37.187/16?")
+			qprint("\nQuelle est l'adresse reseau d'un hote avec une adresse IP de 45.195.37.187/16?")
 			cprint("""
 \t1 - 45.194.37.187
 \t2 - 45.0.0.0
 \t3 - 45.194.0.0
 \t4 - 45.195.0.0
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '4':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\n.......... translates Internet domain names and host names into IP addresses")
+			qprint("\n.......... traduit les noms de domaine Internet et d'hote en adresse IP")
 			cprint("""
 \t1 - Network time protocol (NTP)
 \t2 - Default routing protocol
 \t3 - Domain name system (DNS)
 \t4 - OSI model system
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '3':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nWhich IP address class has more host addresses available by default?")
+			qprint("\nQuelle classe d'adresse IP a plus d'adresses d'hote disponibles par defaut ?")
 			cprint("""
 \t1 - C
 \t2 - D
@@ -412,7 +412,7 @@ class EnQuestions():
 \t4 - B
 \t5 - A
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '5':
 				correct()
 			else:
@@ -423,35 +423,35 @@ class EnQuestions():
 #**************************************************************************
 
 		def qw26_33():
-			qprint("\nWhich of the following propositions is not true?")
+			qprint("\nLaquelle des propositions suivantes n'est pas vraie ?")
 			cprint("""
-\t1 - UDP is faster, simpler and more efficient than TCP
-\t2 - UDP only has the basic error control mechanism
-\t3 - UDP is a datagram oriented protocol
-\t4 - UDP does not support broadcasting
+\t1 - UDP est plus rapide, plus simple et plus efficace que TCP
+\t2 - UDP ne dispose que du mecanisme de controle d'erreur de base
+\t3 - UDP est un protocole oriente datagramme
+\t4 - UDP ne prend pas en charge la diffusion
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '4':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nWhich of the following propositions is not true?")
+			qprint("\nLaquelle des propositions suivantes n'est pas vraie ?")
 			cprint("""
-\t1 - TCP is a connection-oriented protocol
-\t2 - TCP does not support broadcasting
-\t3 - TCP provides extended error checking mechanisms. This is because it provides flow control and data acknowledgement
-\t4 - Data sequencing is a TCP feature (this means that packets arrive in order in the recipient)
-\t5 - The delivery of data to the destination cannot be guaranteed in TCP
-\t6 - TCP is reliable because it guarantees the delivery of data to the router of the destination
+\t1 - TCP est un protocole oriente connexion
+\t2 - TCP ne prend pas en charge la diffusion
+\t3 - TCP fournit des mecanismes de verification d'erreur etendus. C'est parce qu'il fournit le controle de flux et l'acquittement des donees
+\t4 - Le sequencage des donnees est une caracteristique de TCP (cela signifie que les paquets arrivent dans l'ordre dans le destinataire)
+\t5 - La livraison des donnees a la destination ne peut pas etre garantie en TCP
+\t6 - TCP est fiable car il garantit la livraison des donnees au routeur de la destination
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '5':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\n28 - What is the subnet mask of /24?")
+			qprint("\nQuel est le masque de sous reseau de /24 ?")
 			cprint("""
 \t1 - 255.255.255.255
 \t2 - 255.255.255.0
@@ -460,13 +460,13 @@ class EnQuestions():
 \t5 - 255.192.0.0
 \t6 - 255.224.0.0
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '2':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nWhat is the size of an IPV4 address?")
+			qprint("\nQuelle est la taille d'une adresse IPV4 ?")
 			cprint("""
 \t1 - 128 bits
 \t2 - 32 bits
@@ -475,13 +475,13 @@ class EnQuestions():
 \t5 - 8 bits
 \t6 - 64 bytes
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '2':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nWhat is the size of an IPV6 address?")
+			qprint("\nQuelle est la taille d'une adresse IPV6 ?")
 			cprint("""
 \t1 - 128 bits
 \t2 - 32 bits
@@ -490,46 +490,46 @@ class EnQuestions():
 \t5 - 8 bits
 \t6 - 64 bytes
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '1':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nWhat type of address is supported by DHCP?")
+			qprint("\nQuelle type d'adresse est pris en charge par DHCP ?")
 			cprint("""
 \t1 - IPV4
 \t2 - IPV6
-\t3 - IPV4 and IPV6
-\t4 - None of them
+\t3 - IPV4 et IPV6
+\t4 - Aucun d'entre eux
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '3':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nWhich protocol does Ping use?")
+			qprint("\nQuel protocole utilise Ping?")
 			cprint("""
 \t1 - ARP
 \t2 - BootP
 \t3 - TCP
 \t4 - ICMP
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '4':
 				correct()
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nWhich of the following propositions is not true?")
+			qprint("\nLaquelle des propositions suivantes n'est pas vraie ?")
 			cprint("""
-\t1 - UDP is faster, simpler and more efficient than TCP
-\t2 - UDP provides extended error checking mechanisms. This is because it provides flow control and data acknowledgement
-\t3 - UDP is a datagram oriented protocol
-\t4 - UDP supports broadcasting
+\t1 - UDP est plus rapide, plus simple et plus efficace que TCP
+\t2 - UDP fournit des mecanismes de verification d'erreur etendus. C'est parce qu'il fournit le controle de flux et l'acquittement des donees
+\t3 - UDP est un protocole oriente datagramme
+\t4 - UDP prend en charge la diffusion
 """)
-			repons = input("Your Answer : ")
+			repons = input("Votre Réponse : ")
 			if repons == '2':
 				correct()
 			else:
@@ -556,7 +556,7 @@ class EnQuestions():
 		end_time = time.time()
 
 		def cowsay(string):
-			line_nb = 48
+			line_nb = 58
 			print("")
 			print("-" * line_nb)
 			print("{}".format(string))
@@ -571,4 +571,4 @@ class EnQuestions():
 
 		global num_correct
 		total_time = (end_time - start_time)/60
-		cowsay("You Have \033[1;32;40m"+str(num_correct)+"/33\033[0;37;40m Correct Answers\n" + "------------------------------------------------\n" + "You Took \033[1;32;40m{}\033[0;37;40m Minutes To Complete The Training".format(round(total_time, 2)))
+		cowsay("Vous Avez \033[1;32;40m"+str(num_correct)+"/33\033[0;37;40m Réponses Correctes\n" + "----------------------------------------------------------\n" + "Vous Avez Pris \033[1;32;40m{}\033[0;37;40m Minutes Pour Terminer La Préparation".format(round(total_time, 2)))
