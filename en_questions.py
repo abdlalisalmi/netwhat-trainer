@@ -225,7 +225,7 @@ class EnQuestions():
 			else:
 				incorrect()
 			time.sleep(0.5)
-			qprint("\nWhat is the maximum number of IP addresses that can be assigned to hosts on a local subnet using the 255.255.255.255.128 subnet mask?")
+			qprint("\nWhat is the maximum number of IP addresses that can be assigned to hosts on a local subnet using the 255.255.255.128 subnet mask?")
 			cprint("""
 \t1 - 128
 \t2 - 60
